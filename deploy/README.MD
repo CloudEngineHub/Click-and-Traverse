@@ -174,7 +174,7 @@ python -m train_ppo --task {task} --restore_name {restore_name} --exp_name {exp_
 You can set `restore_name` to `none` if you want to train from scratch.
 
 ### Important Notes
-Scene occupancy grids from procedural_obstacle_generation and real2sim construction are different in size. Check `Lx` `Ly` `Lz` and `origin_w` in `procedural_obstacle_generation/pf_modular.py` and `deploy/gx_loco_deploy/policies/g1_cat/pf.py`. 
+Scene occupancy grids from procedural_obstacle_generation and real2sim construction are different in size. Check `Lx` `Ly` `Lz` and `origin_w` in `procedural_obstacle_generation/pf_modular.py` and `gx_loco_deploy/policies/g1_cat/pf.py`. 
     
 - For training, you need to adjust `pf_config.origin` in `cat_ppo/envs/g1/env_cat.py` accordingly.
     
