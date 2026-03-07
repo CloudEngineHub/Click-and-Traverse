@@ -55,6 +55,8 @@
 - [x] 🧩 程序化障碍生成与 HumanoidPF 构建
 - [x] 🧩 专家策略训练代码
 - [x] 🗂️ 预训练专家模型与场景数据
+- [x] 🧩 真机部署代码
+- [x] 🧩 真机到仿真场景采集（用于验证实验与微调）
 - [ ] 🧩 专家到通用策略的蒸馏代码
 - [ ] 🗂️ 预训练通用模型
 - [ ] 🗂️ 扩展的场景数据集
@@ -128,6 +130,11 @@ Click-and-Traverse/
 │   |   └── unitree_g1/             # 人形机器人资源
 │   └── logs/
 |       └── G1_mj_axis/             # 下载的检查点
+├── deploy/                         # 真机部署
+│   ├── gx_loco_deploy/             # 部署helpers
+│   ├── scripts/
+|   |   └── exp_dis_pf/             
+│   └── slam_ws/                    # 从 git 克隆
 └── procedural_obstacle_generation/ # 障碍生成
     ├── main.py
     ├── pf_modular.py               # HumanoidPF 构建
