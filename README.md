@@ -198,6 +198,11 @@ source .venv/bin/activate
 python train_batch.py
 ```
 
+If you want to train a specific experiment, you can run:
+```bash
+python -m train_ppo --task {task} --restore_name {restore_name} --exp_name {exp_name}  --ground {ground} --lateral {lateral} --overhead {overhead} --term_collision_threshold {term_collision_threshold} --obs_path {obs_path}
+```
+
 Supported tasks:
 
 - `G1Cat`: default task (can be directly used for sim-to-real deployment)
@@ -205,8 +210,8 @@ Supported tasks:
 
 Refer to `train_batch.py` for args details.
 
-
-`train_batch.py` will automatically convert checkpoints to ONNX format. If you customize the policy architecture, you may need to convert checkpoints to ONNX manually:
+### brax2onnx
+`train_batch.py` will automatically convert checkpoints to ONNX format. But if you customize the policy architecture, you may need to convert checkpoints to ONNX manually:
 
 ```bash
 python -m cat_ppo.eval.brax2onnx \
@@ -218,12 +223,12 @@ python -m cat_ppo.eval.brax2onnx \
 
 To evaluate the model without privileged observation, run:
 ```bash
-python -m cat_ppo.eval.mj_onnx_play --task G1Cat --exp_name 12221455_G1LocoPFR10_SlowV2OdonoiseV2narrow1_xP3xMxK00xchest --obs_name bend
+python -m cat_ppo.eval.mj_onnx_play --task G1Cat --exp_name 12051223_G1LocoPFR10_OdonoiseSlowV2_xP2xMxK00xlowcorner --obs_path data/assets/TypiObs/lowcorner
 ```
 
 To evaluate the model with privileged observation, run:
 ```bash
-python -m cat_ppo.eval.mj_onnx_play --task G1CatPri --pri --exp_name G1CatPri_narrow1 --obs_name narrow1
+python -m cat_ppo.eval.mj_onnx_play --task G1CatPri --pri --exp_name G1CatPri_narrow1 --obs_path data/assets/TypiObs/narrow1
 ```
 
 ---

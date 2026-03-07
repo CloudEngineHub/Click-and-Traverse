@@ -217,12 +217,12 @@ python -m cat_ppo.eval.brax2onnx \
 
 评估模型时（无特权观测），运行：
 ```bash
-python -m cat_ppo.eval.mj_onnx_play --task G1Cat --exp_name 12051223_G1LocoPFR10_OdonoiseSlowV2_xP2xMxK00xlowcorner --obs_name lowcorner
+python -m cat_ppo.eval.mj_onnx_play --task G1Cat --exp_name 12051223_G1LocoPFR10_OdonoiseSlowV2_xP2xMxK00xlowcorner --obs_path data/assets/TypiObs/lowcorner
 ```
 
 评估模型时（有特权观测），运行：
 ```bash
-python -m cat_ppo.eval.mj_onnx_play --task G1CatPri --pri --exp_name 10140612_G1LocoPF7_v4_xP1xMxK004xD8101S4 --obs_name D8G0L1O1S4
+python -m cat_ppo.eval.mj_onnx_play --task G1CatPri --pri --exp_name G1CatPri_narrow1 --obs_path data/assets/TypiObs/narrow1
 ```
 
 ---
