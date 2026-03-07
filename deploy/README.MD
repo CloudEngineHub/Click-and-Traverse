@@ -87,6 +87,7 @@ source /opt/ros/foxy/setup.sh; source ~/unitree_ros2/setup.sh
 ```bash
 cd Click-and-Traverse/deploy
 source /opt/ros/foxy/setup.bash
+git clone https://github.com/GalaxyGeneralRobotics/Click-and-Traverse-SLAM.git slam_ws
 cd slam_ws
 colcon build --symlink-install
 ```
