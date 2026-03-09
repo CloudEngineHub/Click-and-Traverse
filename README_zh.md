@@ -74,7 +74,7 @@
 ### 1. 克隆仓库
 
 ```bash
-git clone https://github.com/Axian12138/Click-and-Traverse.git
+git clone https://github.com/GalaxyGeneralRobotics/Click-and-Traverse.git
 cd Click-and-Traverse
 ```
 
