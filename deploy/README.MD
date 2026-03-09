@@ -87,14 +87,13 @@ source /opt/ros/foxy/setup.sh; source ~/unitree_ros2/setup.sh
 ```bash
 cd Click-and-Traverse/deploy
 source /opt/ros/foxy/setup.bash
-git clone https://github.com/GalaxyGeneralRobotics/Click-and-Traverse-SLAM.git slam_ws
-cd slam_ws
+cd Click-and-Traverse-SLAM/lidar_ws
 colcon build --symlink-install
 ```
 
 ```bash
 conda activate deploy_cat
-cd ./octomap_py_pkg
+cd ../octomap_py_pkg
 pip install -e .
 cd ..
 ```
@@ -103,9 +102,9 @@ Please refer to `scripts/exp_dis_pf/deploy_real_gf.py:84-131` for more details.
 
 We modify the default config file as follows for the mid360 deployment (suitable for the G1 robot):
 
-- `slam_ws/src/FAST_LIO/config/mid360.yaml`
+- `Click-and-Traverse-SLAM/lidar/src/FAST_LIO/config/mid360.yaml`
 
-- `slam_ws/src/octomap_mapping/octomap_server/launch/octomap_mapping.launch.xml`
+- `Click-and-Traverse-SLAM/lidar/src/octomap_mapping/octomap_server/launch/octomap_mapping.launch.xml`
 
 The result is as follows, user can use **2D Goal Pose** to click the target position:
 <p align="center">
@@ -117,7 +116,7 @@ Start G1 robot and set to debug mod, then
 ```bash
 cd Click-and-Traverse/deploy
 source /opt/ros/foxy/setup.bash
-source slam_ws/install/setup.bash
+source Click-and-Traverse-SLAM/lidar/install/setup.bash
 conda activate deploy_cat
 pip install scikit-fmm
 python -m scripts.exp_dis_pf.deploy_real_gf

@@ -87,7 +87,7 @@ def terminal_sh_tmux():
         conda deactivate;
         source /opt/ros/foxy/setup.bash;
         source ~/unitree_ros2/setup.sh;
-        source ~/workspace/Click-and-Traverse/deploy/slam_ws/install/setup.bash;
+        source ~/workspace/Click-and-Traverse/deploy/Click-and-Traverse-SLAM/lidar_ws/install/setup.bash;
         ros2 launch livox_ros_driver2 msg_MID360_launch.py;
         exec bash
         """,
@@ -97,7 +97,7 @@ def terminal_sh_tmux():
         conda activate deploy_cat;
         source /opt/ros/foxy/setup.bash;
         source ~/unitree_ros2/setup.sh;
-        source ~/workspace/Click-and-Traverse/deploy/slam_ws/install/setup.bash;
+        source ~/workspace/Click-and-Traverse/deploy/Click-and-Traverse-SLAM/lidar_ws/install/setup.bash;
         python -m scripts.exp_dis_pf.octomap_bridge;
         exec bash
         """,
@@ -106,7 +106,7 @@ def terminal_sh_tmux():
         """
         source /opt/ros/foxy/setup.bash;
         source ~/unitree_ros2/setup.sh;
-        source ~/workspace/Click-and-Traverse/deploy/slam_ws/install/setup.bash;
+        source ~/workspace/Click-and-Traverse/deploy/Click-and-Traverse-SLAM/lidar_ws/install/setup.bash;
         ros2 launch fast_lio mapping.launch.py config_file:=mid360.yaml rviz:=true;
         exec bash
         """,
@@ -124,7 +124,7 @@ def terminal_sh_tmux():
         conda activate deploy_cat;
         source /opt/ros/foxy/setup.bash;
         source ~/unitree_ros2/setup.sh;
-        source ~/workspace/Click-and-Traverse/deploy/slam_ws/install/setup.bash;
+        source ~/workspace/Click-and-Traverse/deploy/Click-and-Traverse-SLAM/lidar_ws/install/setup.bash;
         ros2 launch octomap_server octomap_mapping.launch.xml;
         exec bash
         """

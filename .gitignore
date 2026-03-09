@@ -30,9 +30,9 @@ __pycache__/
 # Distribution / packaging
 .Python
 build/
-deploy/slam_ws/build/*
-deploy/slam_ws/install/*
-deploy/slam_ws/log/*
+deploy/Click-and-Traverse-SLAM/lidar_ws/build/*
+deploy/Click-and-Traverse-SLAM/lidar_ws/install/*
+deploy/Click-and-Traverse-SLAM/lidar_ws/log/*
 develop-eggs/
 dist/
 downloads/

@@ -139,7 +139,7 @@ Click-and-Traverse/
 │   ├── gx_loco_deploy/             # deploy helpers
 │   ├── scripts/
 |   |   └── exp_dis_pf/           
-│   └── slam_ws/                    # clone from git
+│   └── Click-and-Traverse-SLAM/ 
 └── procedural_obstacle_generation/ # Obstacle generation
     ├── main.py
     ├── pf_modular.py               # HumanoidPF construction
