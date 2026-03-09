@@ -60,6 +60,8 @@ In this repository, we present:
 - [x] 🧩 Procedural obstacle generation and HumanoidPF construction
 - [x] 🧩 Specialist policy training code
 - [x] 🗂️ Pre-trained specialist models and scene data
+- [x] 🧩 Real-world deployment code
+- [x] 🧩 Real-to-sim contruction for sim2sim test and real-scene finetuning
 - [ ] 🧩 Specialist-to-generalist policy distillation code
 - [ ] 🗂️ Pre-trained generalist models
 - [ ] 🗂️ Expanded scene datasets
@@ -132,6 +134,11 @@ Click-and-Traverse/
 │   |   └── unitree_g1/             # humanoid assets
 │   └── logs/
 |       └── G1_mj_axis/             # downloaded checkpoints
+├── deploy/                         # Real-world deployment
+│   ├── gx_loco_deploy/             # deploy helpers
+│   ├── scripts/
+|   |   └── exp_dis_pf/             
+│   └── slam_ws/                    # clone from git
 └── procedural_obstacle_generation/ # Obstacle generation
     ├── main.py
     ├── pf_modular.py               # HumanoidPF construction
