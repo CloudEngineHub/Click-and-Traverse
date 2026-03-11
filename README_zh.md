@@ -7,6 +7,7 @@
 
 📃[论文](https://arxiv.org/abs/2601.16035) | 🏠[项目主页](https://axian12138.github.io/CAT/) | 📽[视频](https://www.youtube.com/watch?v=blek__Qf0Vc)
  </div>
+ 
 ## 进展
 
 - 2026/03/07: 我们发布了CAT的**真实部署**代码！详情请参阅deploy/Click-and-Traverse-SLAM。
