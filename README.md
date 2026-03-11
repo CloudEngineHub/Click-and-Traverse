@@ -6,13 +6,18 @@
 
 📃[Paper](https://arxiv.org/abs/2601.16035) | 🏠[Website](https://axian12138.github.io/CAT/) | 📽[Video](https://www.youtube.com/watch?v=blek__Qf0Vc)
 
-</div>
+## News
+
+- 2026/03/07: We release the **real-world deployment code** of CAT! Please refer to deploy/Click-and-Traverse-SLAM for details.
+- 2026/01/08: We release the official implementation of CAT!
+
+---
 
 This repository provides the **official implementation** of the paper:
 
 > **Collision-Free Humanoid Traversal in Cluttered Indoor Scenes**
 > *Han Xue et al.*
-> arXiv preprint: [arXiv:2601.16035](https://arxiv.org/abs/2601.16035).`<br>`
+> arXiv preprint: [arXiv:2601.16035](https://arxiv.org/abs/2601.16035).
 > project page: [https://axian12138.github.io/CAT/](https://axian12138.github.io/CAT/).
 
 The project addresses the problem of enabling humanoid robots to safely traverse **cluttered indoor scenes**, which we define as environments that simultaneously exhibit:
@@ -37,7 +42,6 @@ In this repository, we present:
 
 ## Table of Contents
 
-- [News](#news)
 - [Project Status](#project-status)
 - [Installation](#installation)
 - [Repository Structure](#repository-structure)
@@ -50,11 +54,6 @@ In this repository, we present:
 - [Contact Us](#contact-us)
 
 ---
-
-## News
-
-- 2026/03/07: We release the real-world deployment code of CAT! Please refer to deploy/Click-and-Traverse-SLAM for details.
-- 2026/01/08: We release the official implementation of CAT!
 
 ## Project Status
 
@@ -138,7 +137,7 @@ Click-and-Traverse/
 ├── deploy/                         # Real-world deployment
 │   ├── gx_loco_deploy/             # deploy helpers
 │   ├── scripts/
-|   |   └── exp_dis_pf/           
+|   |   └── exp_dis_pf/   
 │   └── Click-and-Traverse-SLAM/ 
 └── procedural_obstacle_generation/ # Obstacle generation
     ├── main.py
